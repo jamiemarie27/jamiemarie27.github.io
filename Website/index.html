@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<title>Dixie</title>
+		<script>
+			function banner(){
+				var text=confirm ("Did you really mean to click on that?");
+				return text;
+				}
+			function answer(){
+				var radio = document.getElementsByName("trivia");
+				var selection = false;
+				var message = "";
+				for( var i = 0; i < radio.length; i++) {
+					if(radio[i].value == "yes" && radio[i].checked == true) {
+					selection = true;
+					} //end if statement
+				} //end for loop
+				if(selection == true) {
+					message = message + "<b><p style='color:yellow'>Way to go!</p></b>";
+					} else {
+				message = message + "<b><p style='color:red'>Try again my friend.</p></b>";
+					}
+						document.getElementById("response").innerHTML = message;
+			} //end function answer
+		</script>
+		<style>
+
+		</style>
+		<link type="text/css" rel="stylesheet" href="main.css"/>
+	</head>
+	<body id="background">
+		<a onclick="return banner()" href="...">
+		<header id="banner">Remembering Dixie</header>
+	</a>
+		<nav>
+			<ul id="navmenu">
+				<li class="navitem"><a href="index.html">Home</a></li>
+				<li class="navitem"><a href="Memories.html"> Memories</a></li>
+				<li class="navitem"><a href="Puzzles.html">Puzzles</a></li>
+			</ul>
+		</nav>
+		<div class="rightside"> 
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/5gq7no2ZQCM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+			<img src="https://thumbs.dreamstime.com/t/iceland-horses-820550.jpg"/>
+		<audio width="400" height="220" controls autoplay>
+			<source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+			Your browser does not support HTML 5 audio.
+		</audio>
+		<img src="https://images.stockfreeimages.com/1514/sfi226w/15146795.jpg"/>
+		<hr/>
+		</div>
+		<div class="leftside">
+<h1>The <span class="purple">best mom</span> I ever had!</h1>
+		<p> <u>Marjorie Arnold Dixon Byers Sehulster</u> brought <strong>joy</strong> to our world from <i>July 1, 1939</i> to <i>April 27, 2020</i>.</p> 
+		<div class="Mom-attributes">
+			<ol>
+				<li class="listitem">Mom was funny.</li>
+				<li class="listitem">Mom was fierce.</li>
+				<li class="listitem">Mom was fetching.</li>
+			</ol>
+		</div>
+		<div class="clearfloat"></div>
+		<div class="wrap-trivia">
+			<h2>It's Time For <strong>Dixie Trivia!!</strong></h2>
+			<p class="paragraph">Whom did Dixie "liberate" on her way to Florida?</p>
+			<form> 
+				<div id="response"></div>
+				<input type="radio" name="trivia" value="no">Donald Duck<br>
+				<input type="radio" name="trivia" value="yes">Planter's Peanut Guy<br>
+				<input type="radio" name="trivia" value="no">Oscar Mayer Weiner-man<br>
+				<input type="radio" name="trivia" value="no">Betty Boop<br>
+				<input onclick="answer()" type="button" id="submit" value="Too easy!">
+			</form>
+		</div>
+			
+		<center> Jamie <a href="https://netflix.com">My Favorite Website</a> </center>
+		<footer id="footer">This website was created by Jamie Marie Long</footer>
+	</body>
+</html>
