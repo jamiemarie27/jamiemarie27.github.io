@@ -1,0 +1,56 @@
+#logo {
+	width:50%;
+	margin-top:4em;
+}
+
+#menu {
+border:3px solid red;
+margin-top:10px;
+margin-left:10px;
+}
+
+#comments {
+background:linear-gradient(to bottom right, blue, silver, purple);
+border:5px solid blue;
+margin-top:5px;
+margin-left:10px;
+height:900px;
+width:100%;
+}
+#form {
+background:linear-gradient(to top right, yellow, white);
+border:3px solid yellow;
+height:700px;
+float:right;
+margin:10px;
+margin-left:10px;
+}
+
+#name {
+width:150px;
+margin-right:8px; }
+
+#header {
+text-align:center;
+background-color:black;
+font-size:2.5em;
+text-decoration:bold;
+color:white;
+border-radius:10px;
+margin-left:-16px;
+margin-right:-16px;
+margin-bottom:15px;
+}
+
+.icon{
+	height: 45px;
+	width: 45px;
+	padding-right:10px;
+
+}
+
+#userComment{
+border:2px solid purple;
+border-radius:15px;
+width:200px;
+}
